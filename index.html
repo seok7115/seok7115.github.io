@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            background-color: green;
+        }
+        p{
+            color:white;
+            background-color: black;
+        }
+        .big{
+            font-size: 50px;
+        }
+        #dream{
+            font-size: 5px;
+        }
+    </style>
+
 </head>
 <body>
     <h1>저는 석재호 입니다.</h1>
-    <p>저는 경기 광주에 살고 있고, 야구를 좋아합니다.</p>
+    <p class="big'">저는 경기 광주에 살고 있고, 야구를 좋아합니다.</p>
+    <p id="dream">제 꿈은 개인 야구장 건립입니다.</p>
+    <div class="big">그냥 쓴거</div>
+    <button id="btn">알림창표시!</button>
+    <script>
+    const btn = document.querySelector('#btn');
+    btn.addEventListener('click',function(){
+        alert('나를 클릭하셨군요');
+
+    });
+    </script>
 </body>
 </html>
